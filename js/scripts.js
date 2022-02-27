@@ -14,14 +14,29 @@ let customerPizza = new Pizza(['cheese','pepperoni','pineapple'],['Small','Mediu
 
 
 Pizza.prototype.topping = function() {
-  this.topping = 'cheese' || 'pepperoni' || 'pineapple';
+  this.topping = ['cheese','pepperoni','pineapple'];
 }
 Pizza.prototype.size = function() {
-  this.size = 'Small' || 'Medium' || 'Large';
+  this.size = ['Small','Medium','large'];
 }
 Pizza.prototype.price = function() {
-  this.price = 10 || 12 || 14;
+  this.price = [10,12,14];
+}
+if (customerPizza === 'cheese') {
+  
 }
 
 console.log(customerPizza)
 
+// UI logic
+$(document).ready(function() {
+  $('form#input').submit(function(event) {
+    event.preventDefault();
+  
+  const pizzaToppings = $('#toppings').val();
+  const pizzasSizes = $('#size')
+  
+
+
+  });
+});

@@ -7,12 +7,9 @@
 
 ## test:
 *_describe: pizza()_
-*_test: create a cinstructor for pizza_
-*_code: let customerPizza1 = new Pizza('cheese','Small',10);_
-*_Expected Output: Pizza {size: 'cheese', topping: 'Small', price: 10,}_
-
-
-
+*_test: create a constructor for pizza_
+*_code: customerPizza = new Pizza(['cheese','pepperoni','pineapple'],['Small','Medium','large'],[10,12,14]);_
+*_Expected Output: Pizza {size: Array(3), topping: Array(3), price: Array(3), updatePrice: ƒ}_
 
 ## technologies used 
 * _VScode_ 
@@ -24,7 +21,6 @@
 
 ## Description 
 _this page lets you choose pizza toppings and sizes_
-
 
 ## Setup/Installation Requirements
 * _within your terminal, navigate to your desktop_
