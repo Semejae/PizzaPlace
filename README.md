@@ -1,9 +1,9 @@
 
-## BeepBoop
+## PizzaPlace 
 
 ### by_**{Anthony-Gladden}**_
 
-### _{this is a page that turns numbers into words}_
+### _{this is a page that creats a pizza}_
 
 ## test:
 *_describe: pizza()_
@@ -23,7 +23,7 @@
 * _css_
 
 ## Description 
-_this page replaces 1,2,3 with a message_
+_this page lets you choose pizza toppings and sizes_
 
 
 ## Setup/Installation Requirements
@@ -34,7 +34,7 @@ _this page replaces 1,2,3 with a message_
 * _Open file in your VS Code to edit_
 * _To edit but not make perminant changes, create a new branch using 'git branch [new-branch-name]'_
 * _Switch to that branch and edit away by using 'git checkout [branch-you'd-like-to-change-to]'_
-* _also you can view the website @ https://github.com/Semejae/beepboop.git
+* _also you can view the website @ https://github.com/Semejae/PizzaPlace.git
 
 ## known bugs
 * _N/A_
@@ -43,4 +43,4 @@ _this page replaces 1,2,3 with a message_
 _refresh page if issues occur or conatact me a.gladden360@outlook.com_
 
 
-_Copyright (c) 02/16/2022 Anthony Gladden_
+_Copyright (c) 02/26/2022 Anthony Gladden_
