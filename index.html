@@ -8,40 +8,28 @@
 </head>
 <body>
   <div class="container">
+    <h1>Welcome to Ant's Pizza</h1>
+
+    
     <form id="input">
-        <label for="name">Toppings</label>
-        <div>
-        <input type="checkbox" id="toppings" name="cheese">
-        <label for="toppings">Toppings</label>
-      </div>
-      <div>
-        <input type="checkbox" id="toppings" name="pepperoni">
-        <label for="toppings">pepperoni</label>
-      </div>
-      <div>
-        <input type="checkbox" id="toppings" name="pineapple">
-        <label for="toppings">pineapple</label>
+      <div id="order1">
+        <h5>Toppings</h5>
+          <select class="pizzaOrder" id="toppings">
+            <option value="cheese">Cheese</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="pineapple">Pineapple</option>
+          </select>   
       </div>
 
-      <label for="name">Sizes</label>
-
-      <div>
-        <input type="checkbox" id="size" name="Small">
-        <label for="size">Small</label>
+      <div id="order2">
+        <h5>Sizes<h5>
+        <select class="pizzaOrder" id="size">
+          <option value="small">small '10</option>
+          <option value="medium">medium '12</option>
+          <option value="large">large '14</option>
+        </select>
+        <button type="submit" class="btn">Submit!!</button>
       </div>
-      <div>
-        <input type="checkbox" id="size" name="Medium">
-        <label for="size">Medium</label>
-      </div>
-      <div>
-        <input type="checkbox" id="size" name="Large">
-        <label for="size">Large</label>
-      </div>
-
-      <button type="submit" class="btn">Submit!!</button>
-
-      <div id="price"></div>
-
     </form>
   </div>
 </body>

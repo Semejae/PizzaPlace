@@ -1,41 +1,35 @@
-'use strict';
-// business logic
+'strict mode';
 
-function Pizza (pizza_Size,pizza_Topping,pizza_Price) {
-  this.size = pizza_Size;
-  this.topping = pizza_Topping;
-  this.price = pizza_Price;
-  this.updatePrice = function() {
-    return ++this.price
-  };
-}
+  // business logic
+function Pizza (size,topping) {
+  this.size = size;
+  this.topping = topping;
+  this.price = 0
+};
 
-let customerPizza = new Pizza(['cheese','pepperoni','pineapple'],['Small','Medium','large'],[10,12,14]);
+const customerPizza = new Pizza(['small','medium','large'],['cheese','pepperoni','pineapple'])
 
-
-Pizza.prototype.topping = function() {
-  this.topping = ['cheese','pepperoni','pineapple'];
-}
-Pizza.prototype.size = function() {
-  this.size = ['Small','Medium','large'];
-}
 Pizza.prototype.price = function() {
-  this.price = [10,12,14];
-}
-if (customerPizza === 'cheese') {
-  
-}
 
-console.log(customerPizza)
+  if (this.size === 'small'){
+  this.price += 10
+  } else if (this.size === 'medium'){
+    this.price += 12
+  } else {
+    this.price += 14
+  }
+};  
 
-// UI logic
+// ui logic
 $(document).ready(function() {
   $('form#input').submit(function(event) {
     event.preventDefault();
-  
-  const pizzaToppings = $('#toppings').val();
-  const pizzasSizes = $('#size')
-  
+
+    const pizzaTopping = $('#toppings').val();
+    const pizzaSize = $('#size').val();
+    const customer = new Pizza(pizzaSize,pizzaTopping)
+    console.log(customer)
+    customer.price(); 
 
 
   });
