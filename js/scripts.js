@@ -7,9 +7,7 @@ function Pizza (size,topping) {
   this.price = 0
 };
 
-const customerPizza = new Pizza(['small','medium','large'],['cheese','pepperoni','pineapple'])
-
-Pizza.prototype.price = function() {
+Pizza.prototype.setPrice = function() {
 
   if (this.size === 'small'){
   this.price += 10
@@ -28,9 +26,10 @@ $(document).ready(function() {
     const pizzaTopping = $('#toppings').val();
     const pizzaSize = $('#size').val();
     const customer = new Pizza(pizzaSize,pizzaTopping)
-    console.log(customer)
-    customer.price(); 
+    customer.setPrice(); 
+    console.log(customer.price)
 
+    $('#results').text(customer.price)
 
   });
 });
