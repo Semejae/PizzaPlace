@@ -8,8 +8,14 @@
 ## test:
 *_describe: pizza()_
 *_test: create a constructor for pizza_
-*_code: customerPizza = new Pizza(['cheese','pepperoni','pineapple'],['Small','Medium','large'],[10,12,14]);_
-*_Expected Output: Pizza {size: Array(3), topping: Array(3), price: Array(3), updatePrice: ƒ}_
+*_code: Pizza = new Pizza(['cheese','pepperoni','pineapple'],['Small','Medium','large']);_
+*_Expected Output: Pizza {size: Array(3), topping: Array(3)}_
+
+*_describe: Pizza.prototype.setPrice()_
+*_test: set price for pizza_
+*_code:if (this.size === 'small'){ this.price += 10 } else if (this.size === 'medium'){ this.price += 12 } else { this.price += 14 }_
+*_Expected Output: small = $10_
+
 
 ## technologies used 
 * _VScode_ 

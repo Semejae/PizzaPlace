@@ -17,6 +17,7 @@ Pizza.prototype.setPrice = function() {
     this.price += 14
   }
 };  
+  
 
 // ui logic
 $(document).ready(function() {
@@ -29,7 +30,7 @@ $(document).ready(function() {
     customer.setPrice(); 
     console.log(customer.price)
 
-    $('#results').text(customer.price)
+    $('#results').text('$'+ customer.price + '.00')
 
   });
 });

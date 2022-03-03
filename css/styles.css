@@ -14,16 +14,20 @@ P{
   margin: 15PX;
   padding: 15px;
   font-weight: bolder;
-  
+
 }
 .btn{
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px ;
+  margin: 15px;
+  padding-left: 10px ;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 45px;
   background: green;
+}
+#results{
+font-weight: bold;
+font-size: larger;
 }
