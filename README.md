@@ -16,6 +16,10 @@
 *_code:if (this.size === 'small'){ this.price += 10 } else if (this.size === 'medium'){ this.price += 12 } else { this.price += 14 }_
 *_Expected Output: small = $10_
 
+*_describe: Pizza.prototype.setToppingPrice()_
+*_test: set price for toppings_
+*_code:if (this.topping === 'blank'){ this.price } else if (this.topping === 'cheese'){ this.price = this.price * 3 } else if (this.topping === 'pepperoni'){ this.price = this.price * 4 } else { this.price = this.price * 2 }};
+*_Expected Output: cheese = this.price * 3_
 
 ## technologies used 
 * _VScode_ 
